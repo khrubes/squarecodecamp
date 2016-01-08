@@ -26,6 +26,7 @@ gem 'devise'
 gem 'omniauth'
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-google-oauth2'
+gem 'sprockets-rails', '< 3.0'
 
 
 gem 'materialize-sass'
