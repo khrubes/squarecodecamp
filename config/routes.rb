@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  root 'devise/sessions#new'
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # get 'auth/:provider/callback', to: 'sessions#create'
   # get 'auth/failure', to: redirect('/')
@@ -8,12 +7,16 @@ Rails.application.routes.draw do
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
 
+  devise_scope :user do
+    get 'pages/profiles'
 
-  get 'pages/profiles'
+    get 'pages/locations'
 
-  get 'pages/locations'
+    get 'pages/resources'
 
-  get 'pages/resources'
+    root 'devise/sessions#new'# write all your routes inside this block
+  end
+  
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
