@@ -53,7 +53,7 @@ function getLocation(location) {
     case 'daytona beach': pin = new google.maps.LatLng(29.210815, -81.022833); break; // Caeley Looney
     case 'melbourne': pin = new google.maps.LatLng(28.083627, -80.608109); break; // Camille Ramseur
     case 'cambridge': pin = new google.maps.LatLng(42.373616, -71.109734); break; // JN Fang
-    case 'san francisco': pin = new google.maps.LatLng(37.774929, -122.419416); break; // Janet Chavez, Shailee Wilson
+    case 'san francisco': pin = new google.maps.LatLng(37.774929, -122.419416); break; // Janet Chavez, Shailee Wilson, Gloria
     case 'detroit': pin = new google.maps.LatLng(42.331427, -83.045754); break; // Jeseekia Vaughn
     case 'wellesley': pin = new google.maps.LatLng(42.296797, -71.292388); break; // Ashley Thomas
     case 'jacksonville': pin = new google.maps.LatLng(30.332184, -81.655651); break; // Allison Lakay Bryan
@@ -101,6 +101,25 @@ function lookUpByName() {
   console.log(camper);
   switch (camper) {
     case 'Rachel': map.setCenter(new google.maps.LatLng(39.9525839, -75.1652215)); map.setZoom(7); break;
+    case 'Andrea': map.setCenter(new google.maps.LatLng(39.9525839, -75.1652215)); map.setZoom(7); break;
+    case 'Kathryn': map.setCenter(new google.maps.LatLng(40.712784, -74.005941)); map.setZoom(7); break;
+    case 'Kaitlin': map.setCenter(new google.maps.LatLng(40.712784, -74.005941)); map.setZoom(7); break;
+    case 'Briana': map.setCenter(new google.maps.LatLng(40.712784, -74.005941)); map.setZoom(7); break;
+    case 'Victoria': map.setCenter(new google.maps.LatLng(41.823989, -71.412834)); map.setZoom(7); break;
+    case 'Caeley': map.setCenter(new google.maps.LatLng(29.210815, -81.022833)); map.setZoom(7); break;
+    case 'Camille': map.setCenter(new google.maps.LatLng(28.083627, -80.608109)); map.setZoom(7); break;
+    case 'JN': map.setCenter(new google.maps.LatLng(42.373616, -71.109734)); map.setZoom(7); break;
+    case 'Janet': map.setCenter(new google.maps.LatLng(37.774929, -122.419416)); map.setZoom(7); break;
+    case 'Shai': map.setCenter(new google.maps.LatLng(37.774929, -122.419416)); map.setZoom(7); break;
+    case 'Gloria': map.setCenter(new google.maps.LatLng(37.774929, -122.419416)); map.setZoom(7); break;
     case 'Jeseekia': map.setCenter(new google.maps.LatLng(42.331427, -83.045754)); map.setZoom(7); break;
+    case 'Ashley': map.setCenter(new google.maps.LatLng(42.296797, -71.292388)); map.setZoom(7); break;
+    case 'Allison': map.setCenter(new google.maps.LatLng(30.332184, -81.655651)); map.setZoom(7); break;
+    case 'Kelsey': map.setCenter(new google.maps.LatLng(42.030781, -93.631913)); map.setZoom(7); break;
+    case 'Rosario': map.setCenter(new google.maps.LatLng(34.096676, -117.719779)); map.setZoom(7); break;
+    case 'Hashma': map.setCenter(new google.maps.LatLng(42.259173, -72.574793)); map.setZoom(7); break;
+    case 'Vy': map.setCenter(new google.maps.LatLng(33.748995, -84.387982)); map.setZoom(7); break;
+    case 'Kayla': map.setCenter(new google.maps.LatLng(34.052234, -118.243685)); map.setZoom(7); break;
+    case 'Megan': map.setCenter(new google.maps.LatLng(30.267153, -97.743061)); map.setZoom(7); break;
   }
 }
