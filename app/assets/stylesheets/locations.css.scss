@@ -1,7 +1,14 @@
 #locations-wrapper{
-	text-align: center;
-	height: 100%;
+	//background: #33cccc;
 
+	#demo-menu-lower-left {
+  		padding: 20px;
+	}
+
+	#row, h1, h5, searchByName {
+		text-align: center;
+		color: black;
+	}
 	#map {
 		color: black;
 		height: auto; 
@@ -12,17 +19,4 @@
 	#search_button {
 		color:black;
 	}
-
-	h3 {
-		text-align: center;
-	}
-
-	.row {
-		position: relative;
-  		top: 50%;
-  		transform: translateY(-50%); /* used for vertical aligning */
-  		color: white;
-  		margin: 0 0 0 0;
-	}
-	
 }
