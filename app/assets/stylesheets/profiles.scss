@@ -1,6 +1,45 @@
-// Place all the styles related to the Profiles controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#profiles-wrapper {
+	height: 100%;
+
+	.container {
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		height: 90%;
+  		width: 90%;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+
+	h1 {
+	color: white;
+	}
+
+	.links {
+		padding-bottom: 2%;
+		color: white;
+
+		a {
+			color: white;
+		}
+	}
+
+	.col {
+		text-align: center;
+	}
+
+	.collection {
+		width: 90%;
+    	margin-left: auto;
+    	margin-right: auto;
+    	margin-top: 5%;
+	}
+
+	img {
+		max-width: 90%;
+		height: auto;
+}
 
 #all-profiles {
 	padding-left: 5%;
@@ -9,4 +48,3 @@
 	#new-prof-button {
 		margin: auto;
 	}
-}

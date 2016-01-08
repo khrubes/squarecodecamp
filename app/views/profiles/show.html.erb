@@ -1,20 +1,44 @@
+<div id="profiles-wrapper">
 <p id="notice"><%= notice %></p>
-<%= image_tag @profile.image_url %>
-<p>
-  <strong>Name:</strong>
-  <%= @profile.name %>
-</p>
+<div class="container">
+	<div class="card teal">
 
-<p>
-  <strong>Email:</strong>
-  <%= @profile.email %>
-</p>
+		<div class="row">
+			<div class="col s12">
+				<h1><%= @profile.name %></h1>
+				<img src="<%= @profile.image_url%>">
+				<ul class="collection">
+				    <li class="collection-item avatar">
+				      <i class="material-icons circle">email</i>
+				      <span class="title">Email</span>
+				      <p><%= @profile.email %>
+				      </p>
+				    </li>
+				    <li class="collection-item avatar">
+				      <i class="material-icons circle">assignment</i>
+				      <span class="title">Alma Mater</span>
+				      <p>
+				      	  <%= @profile.alma %>
+				      </p>
+				    </li>
+				 </ul>
+			</div>
+		</div>
 
-<p>
-  <strong>Alma:</strong>
-  <%= @profile.alma %>
-</p>
+			<div class="links row">
+				<div class="col s6">
+					<i class="material-icons circle">fast_rewind</i>
+					<%= link_to 'Back', profiles_path %>
+				</div>
+				<div class="col s6">
+					<i class="material-icons circle">settings_applications</i>
+					<%= link_to 'Edit', edit_profile_path(@profile) %>
+				</div>
+			</div>
 
+		</div> 
+	</div>
+</div>
 
-<%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+</div>
+
