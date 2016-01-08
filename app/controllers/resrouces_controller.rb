@@ -18,6 +18,6 @@ class ResourcesController < ApplicationController
   # GET /profiles/1/edit
   def edit
   end
-
+end
   # POST /profiles
   # POST /profiles.json
