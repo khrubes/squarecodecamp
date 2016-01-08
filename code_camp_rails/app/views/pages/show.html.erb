@@ -1,0 +1,24 @@
+<h1><%= @user.name %></h1>
+
+<img src="pic_mountain.jpg" alt="Mountain View" style="width:304px;height:228px;">
+
+<ul>
+	<li> Location: <%= @user.location %> </li>
+	<li> Email: <%= @user.email %> </li>
+	<li> Twitter Name: <%= @user.twitter%>
+
+	<% if @profile.college? %>
+		<li> College: <%= user.college %> </li>
+	<% end %>
+
+	<% if @profile.company? %>
+		<li> Company: <%= user.company %> </li>
+	<% end %>
+
+	<% if @profile.bio? %>
+		<li> Bio: <%= user.bio %> </li>
+	<% end %>
+</ul>
+<% end %>
+
+
