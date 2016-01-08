@@ -27,6 +27,7 @@ gem 'omniauth'
 gem 'omniauth-oauth2', '~> 1.3.1'
 gem 'omniauth-google-oauth2'
 gem 'sprockets-rails', '< 3.0'
+gem 'sprockets-derailleur', '0.0.9'
 
 
 gem 'materialize-sass'
