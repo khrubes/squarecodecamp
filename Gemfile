@@ -32,7 +32,7 @@ gem 'sprockets-derailleur', '0.0.9'
 
 gem 'materialize-sass'
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'mini_magick', '3.5.0'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
@@ -46,6 +46,10 @@ gem 'pg', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+group :production do 
+  gem 'pg' #sqlite3 gem is not supported on Heroku.
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
