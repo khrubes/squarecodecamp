@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  root 'home#show'
+  root 'devise/sessions#new'
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # get 'auth/:provider/callback', to: 'sessions#create'
   # get 'auth/failure', to: redirect('/')
