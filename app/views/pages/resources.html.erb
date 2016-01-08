@@ -1,18 +1,69 @@
-<h1> Resources </h1>
+<div class="top">
+	<img id= "logo" src="../assets/resourcesheader.png" style="min-width:100%; max-width:100%;"/>
+</div>
+
+<div class="resources">
+
+
+<!-- <h1> Resources </h1> -->
+
+<h2> <i class="medium material-icons">language</i>Conferences </h2>
 
 <ul>
-	<% @resources.each do |resource| %>
-		<li>
-			  <%= resource.title %>
-			
-			<br>
-		</li>
-
-
-	<% end %>
-	<br>
+	 <li><a href="http://ghc.anitaborg.org/">Grace Hopper </a></li>
+	 <li><a href="http://www.wecodeharvard.com/"> WECode @ Harvard </a></li>
+	 <li><a href="http://tapiaconference.org/"> Tapia Conference</a></li>
 
 
 </ul>
 
-<%= render partial: 'form' %>
+<h2><i class="medium material-icons">code</i> Developing </h2>
+
+<ul>
+	 <li><a href="http://lab.hakim.se/reveal-js/#/">Reveal.js </a></li>
+	 <li><a href="http://p5js.org/">p5.js </a></li>
+
+</ul>
+
+<h2><i class="medium material-icons">work</i> Career </h2>
+
+<ul>
+	 <li><a href="http://codingforinterviews.com/">Coding for interviews </a></li>
+	 <li><a href="http://www.code2040.org/">Code2040 </a></li>
+
+</ul>
+
+
+
+<div class="row">
+        <div class="col s12 m6">
+          <div class="card teal lighten-2">
+            <div class="card-content white-text">
+              <span class="card-title">Grace Hopper</span>
+              <p>A super cool conference</p>
+            </div>
+            <div class="card-action">
+              <a href="http://ghc.anitaborg.org/">This is a link</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <div class="row">
+      <div class="col s12 m5">
+        <div class="card-panel teal">
+          <span class="white-text">Conferences
+          </span>
+                      <div class="card-action">
+              <a href="http://ghc.anitaborg.org/">Grace Hopper</a>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+</div>
