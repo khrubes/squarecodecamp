@@ -32,7 +32,7 @@ gem 'sprockets-derailleur', '0.0.9'
 
 gem 'materialize-sass'
 gem 'carrierwave'
-gem 'mini_magick'
+gem 'mini_magick', '3.5.0'
 
 gem 'rails_12factor', group: :production
 gem 'pg', group: :production
