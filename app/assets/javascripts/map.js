@@ -1,11 +1,13 @@
+var map;
+
 function initialize() {
         var mapCanvas = document.getElementById('map');
         var mapOptions = {
-          center: new google.maps.LatLng(39, -95),
+          center: new google.maps.LatLng(36.5, -96),
           zoom: 5,
           mapTypeId: google.maps.MapTypeId.ROADMAP
         };
-        var map = new google.maps.Map(mapCanvas, mapOptions);
+        map = new google.maps.Map(mapCanvas, mapOptions);
         var philadelphia = ['Rachel Han', 'Andrea Baric'];
         var new_york = ['Kathryn Hodge', 'Kaitlin Gu', 'Briana Vecchione'];
         var providence = ['Victoria Chavez'];
@@ -43,10 +45,10 @@ function initialize() {
       google.maps.event.addDomListener(window, 'load', initialize); 
 
 function getLocation(location) {
-	var pin
-	switch (location) {
-		case 'philadelphia': pin = new google.maps.LatLng(39.9525839, -75.1652215); break; //Rachel Han, Andrea Baric
-		case 'new york': pin = new google.maps.LatLng(40.712784, -74.005941); break; // Kathryn Hodge, Kaitlin Gu, Briana Vecchione
+  var pin
+  switch (location) {
+    case 'philadelphia': pin = new google.maps.LatLng(39.9525839, -75.1652215); break; //Rachel Han, Andrea Baric
+    case 'new york': pin = new google.maps.LatLng(40.712784, -74.005941); break; // Kathryn Hodge, Kaitlin Gu, Briana Vecchione
     case 'providence': pin = new google.maps.LatLng(41.823989, -71.412834); break; // Victoria Chavez
     case 'daytona beach': pin = new google.maps.LatLng(29.210815, -81.022833); break; // Caeley Looney
     case 'melbourne': pin = new google.maps.LatLng(28.083627, -80.608109); break; // Camille Ramseur
@@ -55,14 +57,14 @@ function getLocation(location) {
     case 'detroit': pin = new google.maps.LatLng(42.331427, -83.045754); break; // Jeseekia Vaughn
     case 'wellesley': pin = new google.maps.LatLng(42.296797, -71.292388); break; // Ashley Thomas
     case 'jacksonville': pin = new google.maps.LatLng(30.332184, -81.655651); break; // Allison Lakay Bryan
-		case 'ames': pin = new google.maps.LatLng(42.030781, -93.631913); break; // Kelsey Hrubes
-		case 'claremont': pin = new google.maps.LatLng(34.096676, -117.719779); break; // Rosario Huamani Carpio
-		case 'south hadley': pin = new google.maps.LatLng(42.259173, -72.574793); break; // Hashma Shahid
-		case 'atlanta': pin = new google.maps.LatLng(33.748995, -84.387982); break; // Vy Thuy Nguyen
+    case 'ames': pin = new google.maps.LatLng(42.030781, -93.631913); break; // Kelsey Hrubes
+    case 'claremont': pin = new google.maps.LatLng(34.096676, -117.719779); break; // Rosario Huamani Carpio
+    case 'south hadley': pin = new google.maps.LatLng(42.259173, -72.574793); break; // Hashma Shahid
+    case 'atlanta': pin = new google.maps.LatLng(33.748995, -84.387982); break; // Vy Thuy Nguyen
     case 'los angeles': pin = new google.maps.LatLng(34.052234, -118.243685); break; // Kayla Kasprak
     case 'austin': pin = new google.maps.LatLng(30.267153, -97.743061); break; // Megan Chen
-	} 
-	return pin;
+  } 
+  return pin;
 }
 
 function makeMarker(id, location, names, map) {
@@ -94,8 +96,11 @@ function makeMarker(id, location, names, map) {
   });
 }
 
-function lookUpByName(name, map) {
-  switch (name) {
-    case 'Rachel Han': map.setCenter(getLocation('philadelphia'));
+function lookUpByName() {
+  var camper = document.getElementById("camper").value;
+  console.log(camper);
+  switch (camper) {
+    case 'Rachel': map.setCenter(new google.maps.LatLng(39.9525839, -75.1652215)); map.setZoom(7); break;
+    case 'Jeseekia': map.setCenter(new google.maps.LatLng(42.331427, -83.045754)); map.setZoom(7); break;
   }
 }
