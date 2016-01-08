@@ -1,8 +1,13 @@
 Rails.application.routes.draw do
+  resources :profiles
   devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
   # get 'auth/:provider/callback', to: 'sessions#create'
   # get 'auth/failure', to: redirect('/')
   # get 'signout', to: 'sessions#destroy', as: 'signout'
+
+  #match '/users/sign_in#(/:action)' => redirect("/profiles#%{action}"), :defaults => { :action => "show" }
+  assert_routing({ path: '/users/sign_in#', method: :get },
+               { controller: 'profiles', action: 'show', slug: '/profiles' })
 
   resources :sessions, only: [:create, :destroy]
   resource :home, only: [:show]
