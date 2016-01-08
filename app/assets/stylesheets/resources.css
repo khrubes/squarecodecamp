@@ -1,14 +1,15 @@
-body{
-	background-color: #ff6666	!important;
-}
+body.resources{
+/*	background-color: #ff6666	!important;
+*/}
 
 
 .resources {
-/*
-	background-color: #ff6666	;*/
+
+	background-color: #ff6666	;
 	height: inherit;
 	padding: 0px;
 	text-align: center;
+	height: 1000px;
 }
 
 
